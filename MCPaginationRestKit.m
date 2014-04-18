@@ -30,8 +30,8 @@
 
 
     // Responses applied to any URL
-
-    RKResponseDescriptor* MCMeta_Response_n = [RKResponseDescriptor responseDescriptorWithMapping:MCMetaResponseMapping pathPattern:nil keyPath:@"meta" statusCodes:successCodes];
+  
+    RKResponseDescriptor* MCMeta_Response_n = [RKResponseDescriptor responseDescriptorWithMapping:MCMetaResponseMapping method:RKRequestMethodAny pathPattern:nil keyPath:@"meta" statusCodes:successCodes];
 
     // Configure RestKit to handle requests and responses
 
